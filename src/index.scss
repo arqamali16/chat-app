@@ -61,3 +61,52 @@ code {
 .button-align {
 	width: 100%;
 }
+
+.card-styling {
+	max-width: 25%;
+}
+
+.ant-avatar > img {
+	object-fit: contain;
+}
+
+.ant-avatar {
+	width: 12% !important;
+}
+
+@media only screen and (max-width: 480px) {
+	.card-styling {
+		max-width: 85% !important;
+	}
+	.ant-avatar {
+		width: 40% !important;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.card-styling {
+		max-width: 65% !important;
+	}
+	.ant-avatar {
+		width: 30% !important;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.card-styling {
+		max-width: 45%;
+	}
+	.ant-avatar {
+		width: 20% !important;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+	.card-styling {
+		max-width: 45% !important;
+	}
+
+	.ant-avatar {
+		width: 12% !important;
+	}
+}

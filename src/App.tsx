@@ -1,15 +1,18 @@
 import React from 'react';
 import { Avatar, Button, Card, Col, Input, Row, Typography } from 'antd';
 import './App.css';
+import OtpInputs from './Components/OptInputs';
+
+import Logo from './Asset/arm-chat.png';
 
 const App = () => {
 	return (
 		<div className='login-card'>
-			<Row justify='space-around' align='middle' gutter={[16, 48]} style={{ backgroundColor: '#FAFAFA' }}>
+			<Row justify='space-around' align='middle' gutter={[16, 8]} style={{ backgroundColor: '#FAFAFA' }}>
 				<Col span={24} className='text-align-centre'>
-					<Avatar shape='square' size={64} />
+					<Avatar shape='square' size={100} src={Logo} />
 				</Col>
-				<Col span={24} style={{ maxWidth: '30%' }}>
+				<Col span={24} className='card-styling'>
 					<Card className='card-align'>
 						<Row justify='space-around' align='middle' gutter={[16, 32]}>
 							<Col span={24} className='text-align-centre'>
@@ -21,20 +24,7 @@ const App = () => {
 								</Typography.Text>
 							</Col>
 							<Col span={24}>
-								<Row justify='space-around' align='middle' style={{ marginLeft: '10%' }}>
-									<Col span={6}>
-										<Input className='otp-text'></Input>
-									</Col>
-									<Col span={6}>
-										<Input className='otp-text'></Input>
-									</Col>
-									<Col span={6}>
-										<Input className='otp-text'></Input>
-									</Col>
-									<Col span={6}>
-										<Input className='otp-text'></Input>
-									</Col>
-								</Row>
+								<OtpInputs />
 							</Col>
 							<Col span={24}>
 								<Button className='button-width'>VERIFY OTP</Button>
